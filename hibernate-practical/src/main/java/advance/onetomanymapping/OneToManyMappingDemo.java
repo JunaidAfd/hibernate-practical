@@ -50,10 +50,9 @@ public class OneToManyMappingDemo {
 
         tx.commit();
         Question1 q=(Question1) session.get(Question1.class,1212);
+        System.out.println(q.getQuestionId());
         System.out.println(q.getQuestion());
-        for(Answer1 a:q.getAnswers()){
-            System.out.println(a.getAnswer());
-        }
+        System.out.println(q.getAnswers().size());//Lazy Loading
 
         session.close();
         factory.close();
