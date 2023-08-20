@@ -12,7 +12,7 @@ public class MappingDemo {
 
         Question question=new Question();
         question.setQuestionId(1212);
-        question.setQuestion("What is Java?");
+        question.setQuestion("What is Java");
 
         Answer answer=new Answer();
         answer.setAnswerId(343);
@@ -29,7 +29,6 @@ public class MappingDemo {
         //fetching
         Question question1=(Question) session.get(Question.class,1212);
         System.out.println(question1.getQuestion());
-        System.out.println(question1.getAnswer().getAnswer());
         session.close();
         factory.close();
     }

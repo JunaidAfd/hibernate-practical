@@ -14,5 +14,7 @@
 		<mapping class="advance.hibernate_practical.Address" />
 		<mapping class="advance.mapping.Question" />
 		<mapping class="advance.mapping.Answer" />
+		<mapping class="advance.onetomanymapping.Question1" />
+		<mapping class="advance.onetomanymapping.Answer1" />
 	</session-factory>
 </hibernate-configuration>
