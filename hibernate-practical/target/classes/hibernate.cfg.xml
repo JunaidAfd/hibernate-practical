@@ -16,5 +16,7 @@
 		<mapping class="advance.mapping.Answer" />
 		<mapping class="advance.onetomanymapping.Question1" />
 		<mapping class="advance.onetomanymapping.Answer1" />
+		<mapping class="advance.manytomanymapping.Employee" />
+		<mapping class="advance.manytomanymapping.Project" />
 	</session-factory>
 </hibernate-configuration>
