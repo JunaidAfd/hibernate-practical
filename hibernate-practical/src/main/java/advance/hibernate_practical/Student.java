@@ -1,6 +1,20 @@
 package advance.hibernate_practical;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
+
+    @Id
     private int id;
     private String name;
     private String city;
